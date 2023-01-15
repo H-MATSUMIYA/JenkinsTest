@@ -1,10 +1,14 @@
 pipeline {
     agent any
 
+    parameters {
+        
+    }
+    
     stages {
         stage('Hello1') {
             steps {
-                echo 'Hello World'
+                echo "${params.OutputText}"
             }
         }
         stage('Hello2') {
