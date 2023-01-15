@@ -1,10 +1,6 @@
 pipeline {
     agent any
-
-    parameters {
-        
-    }
-    
+   
     stages {
         stage('Hello1') {
             steps {
